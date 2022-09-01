@@ -207,7 +207,7 @@ main {
 }
 
 #funcionamento h2{
-    margin-top: 300px;
+    margin-top: 600px;
     margin-bottom: 45px;
 }    
 
@@ -251,16 +251,21 @@ main {
     align-items: center;
 }
 #integrantes img{    
-    margin-top: 256px;
+    margin-top: 150px;
     border-radius: 50%;
+    margin-left: 160px;
     margin-right: 165px;
-    width: 325px;
+    width: 400px;
 }
 .navbar a:hover {
     color: #FFE045;
     transition: 1500ms;
     font-size: 45px;
     text-decoration:underline;
+}
+
+#links a {
+    font-size: 25px;
 }
 
 #links a:hover {
