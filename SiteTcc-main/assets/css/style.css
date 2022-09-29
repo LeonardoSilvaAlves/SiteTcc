@@ -7,8 +7,20 @@
     font-family: 'Quicksand', sans-serif;
     color: #fff;
     background-color: black;
+    
 }
 
+input {
+    width: 0;
+    height: 0;
+}
+body {
+    min-height: 100vh;
+    max-width: 400px;
+}
+nav {
+    width: 1440px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -25,7 +37,7 @@ a {
     border-right: 2px solid #FA43DE;
     margin-right: 2px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background: none;
 }
 
@@ -43,7 +55,6 @@ h3 {
 .navbar img {
     width: 350px;
     margin-right: 42px;
-    margin-left: 80px;
 }
 
 .navbar{
@@ -55,18 +66,17 @@ h3 {
 .navlink {
     display: flex;
     flex-direction: row;
-    margin-left: 82px;
 }
 .navbar a {
-    margin-left: 5px;
+    margin-left: 15px ;
     margin-right: 15px;
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
     display: flex;
     justify-content: center;
     margin-top: 157px;
     text-align: center;
-    padding-right: 50px;
+    padding-right: 45px;
     color: #3DD8FC; 
 }
 
@@ -79,27 +89,28 @@ main {
 
 #home {
     background: url(../img/Rectangle\ 1.png)no-repeat;
-    width: 1278px;
+    width: 1128px;
+    margin-left: 35%;
     height: 551px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 300px;
+    align-content: center;
+    align-items: center;
     border-radius: 23px;
     
 }
 
 #home h2 {
     text-align: right;
-    float: left;
-    margin-top: 246px;
+    margin-top: 120px;
     margin-left: 80px;
     color: #FFE045;
     font-weight: bold;
 }
 
 #home p {
-    margin-left: 708px;
-    margin-right: 40px;
+    margin-left: 500px;
+    margin-right: 20px;
     margin-top: -246px;
     justify-content: right;
     text-align: left;
@@ -107,18 +118,26 @@ main {
 
 #publico{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-left: 35%;
 } 
 
 #publico img {
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    margin-top: 110px;
-    margin-left: 382px;
+    margin-top: 200px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-left: 200px;
     float: left;
 }
 
 .texto h2 {
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     margin-left: -35px;
     margin-right: 165px;
     color: #FA43DE;
@@ -127,38 +146,37 @@ main {
 
 .texto p {
     text-align: start;
-    margin-left: 200px;
-    margin-right: 305px;
+    margin-left: 100px;
     margin-bottom: 127px;
 }
 
-#equipamentos h2 {
-    margin-bottom: 45px;
-    margin-left: -500px;
-    display: inline;
-    text-align: center;
+
+.texto1 {
+    background: none;
+    margin-bottom: 50px;
 }
 
 #equipamentos{
-    width: 90%;
-    height: 50vh;
+    width: 1200px;
+    height: 100vh;
     background: url(../img/Rectangle\ 2.png)no-repeat;
     display: flex;
-    margin-left: 300px;
+    margin-left: 35%;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border-radius: 23px;
+    margin-bottom: 50px;
 }  
 
 .carossel-Container{
     position: relative;
-    width: 70%;
+    display: flex;
+    width: 1200px;
     height: 400px;
-    margin-right: 500px;
     overflow: hidden;
     justify-content: center;
-    align-items: center;
     background: none;
   }
   
@@ -176,23 +194,25 @@ main {
     position: relative;
     right: 0;
     flex: none;
-    margin-right: 80px;
-    border-radius: 48px;
     height: 310px;
-    width: 350px;  
-    transition: right 10s ease-out;
+    width: 450px;  
+
+    transition: right 5s ease-out;
     box-sizing: content-box;
     background: none;
   }
 
   .item img {
     border-radius: 48px;
+    margin-left: -300px;
+    height: 250px;
+    width: 250px; 
   }
   
   .btnCarossel{
     background: rgba(20, 20, 20, 0);
     width: 5%;
-    height: 100%;
+    height: 80%;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -242,7 +262,9 @@ main {
 #funcionamento {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    width: 1000px;
 }
 
 #funcionamento h2{
@@ -252,29 +274,35 @@ main {
 
 #funcionamento div{
     display: flex;
+    margin-left: 35%;
+    width: 1000px;
 }
 
 #funcionamento .first h3 {
     margin-left: 61px;
+    font-weight: bold;
 }
 
 #funcionamento .third h3 {
     margin-left: 61px;
+    font-weight: bold;
 }
 
 #funcionamento .second h3{
     margin-right: 61px;
+    font-weight: bold;
 }
 
 #funcionamento img {
     border-radius: 48px;
-    width: 387px;
+    width: 250px;
     margin-left: 5px;
     margin-bottom: 80px;
 }
 
 #funcionamento .second {
     flex-direction: row-reverse;
+    justify-content: right;
 }
 
 #links {
@@ -282,6 +310,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 1000px;
+    margin-left: 35%;
+}
+
+#integrantes {
+    width: 1000px;
+    margin-left: 25%;
 }
 
 #integrantes picture{
@@ -292,8 +327,8 @@ main {
 #integrantes img{    
     margin-top: 150px;
     border-radius: 50%;
-    margin-right: 165px;
-    width: 400px;
+    margin-right: 50px;
+    width: 350px;
 }
 .navbar a:hover {
     color: #FFE045;
@@ -301,7 +336,7 @@ main {
 }
 
 .foto-fernando {
-    margin-left: 165px;
+    margin-left: 160px;
 }
 
 #links a {
@@ -336,7 +371,88 @@ main {
    #foto:hover  #comentario{
          opacity: 1;
    }
-  
+
+
 .links a{
     border: none;
 }   
+
+@media (max-width: 768px){
+    body {
+        min-height: 100vh;
+    }
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .navbar a {
+        font-size: 2px;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+    .navbar img {
+        width: 250px;
+    }
+    #home, #equipamentos{
+        width: 650px;
+        height: 300px;
+        margin-left: 25%;
+    }
+    #home p{
+        margin-left: 250px; 
+        margin-top: -95px;   
+    }
+    #home h2 {
+        margin-top: 60px;
+    }
+    #publico{
+        width: 700px;
+        margin-left: 5%;
+    }
+    #publico img {
+        width: 180px;
+        height: 180px;
+    }
+    .item{
+        width: 180px;
+        height: 180px;
+        margin-right: 50px;
+    }
+
+    .item img {
+        width: 180px;
+        height: 180px;
+        margin-right: 10px;
+    }
+    .carossel-Container{
+        width: 650px;
+        height: 300px;
+    } 
+    #funcionamento, #funcionamento div {
+        width: 650px;
+        justify-content: center;
+        margin-left: 15%;
+    }
+    #links {
+        width: 650px;
+        border: none;
+    }
+    #links a {
+        border: none;
+        font-size: 24px;
+    }
+    #integrantes {
+        width: 650px;
+        margin-left: 15%;
+    }
+    #integrantes img {
+        width: 250px;
+        height: 250px;
+        margin-right: 25px;
+    }
+}
