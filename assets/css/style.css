@@ -270,6 +270,7 @@ main {
 #funcionamento h2{
     margin-top: 200px;
     margin-bottom: 45px;
+    margin-left: 45%;
 }    
 
 #funcionamento div{
@@ -281,6 +282,7 @@ main {
 #funcionamento .first h3 {
     margin-left: 61px;
     font-weight: bold;
+
 }
 
 #funcionamento .third h3 {
@@ -340,7 +342,8 @@ main {
 }
 
 #links a {
-    font-size: 25px;
+    font-size: 20px;
+    border: none;
 }
 
 #links a:hover {
