@@ -7,31 +7,35 @@
     font-family: 'Quicksand', sans-serif;
     color: #fff;
     background-color: black;
-    
 }
 
+main{
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 input {
     width: 0;
     height: 0;
 }
-body {
-    min-height: 100vh;
-    max-width: 400px;
-}
-nav {
-    width: 1440px;
-}
 html {
     scroll-behavior: smooth;
-}
-
-h2 {
-    font-size: 45px;
-    font-weight: 700;
-    background: none;
     
 }
+body {
+    min-height: 100vh;
+    max-width: 350px;
+   
 
+}
+h2 {
+    font-size: 35px;
+    font-weight: 700;
+    background: none;
+     
+}
 a {
     text-decoration: none;
     border-right: 2px solid #FA43DE;
@@ -40,319 +44,262 @@ a {
     padding: 5px;
     background: none;
 }
-
 p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     background: none;
 }
-
 h3 {
     color: #FFE045;
     font-size: 45px;
     background: none;
+    margin-bottom: 2rem
 }
 .navbar img {
-    width: 350px;
-    margin-right: 42px;
+    width: 300px;
 }
-
 .navbar{
-    display: flex;   
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.navlink {
-    display: flex;
-    flex-direction: row;
-}
-.navbar a {
-    margin-left: 15px ;
-    margin-right: 15px;
-    font-size: 24px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    margin-top: 157px;
-    text-align: center;
-    padding-right: 45px;
-    color: #3DD8FC; 
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-#home {
-    background: url(../img/Rectangle\ 1.png)no-repeat;
-    width: 1128px;
-    margin-left: 35%;
-    height: 551px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    border-radius: 23px;
-    
-}
-
-#home h2 {
-    text-align: right;
-    margin-top: 120px;
-    margin-left: 80px;
-    color: #FFE045;
-    font-weight: bold;
-}
-
-#home p {
-    margin-left: 500px;
-    margin-right: 20px;
-    margin-top: -246px;
-    justify-content: right;
-    text-align: left;
-}
-
-#publico{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    margin-left: 35%;
-} 
-
-#publico img {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    margin-top: 200px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    margin-left: 200px;
-    float: left;
-}
-
-.texto h2 {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: -35px;
-    margin-right: 165px;
-    color: #FA43DE;
-    font-weight: bold;
-}
-
-.texto p {
-    text-align: start;
-    margin-left: 100px;
-    margin-bottom: 127px;
-}
-
-
-.texto1 {
-    background: none;
-    margin-bottom: 50px;
-}
-
-#equipamentos{
-    width: 1200px;
-    height: 100vh;
-    background: url(../img/Rectangle\ 2.png)no-repeat;
-    display: flex;
-    margin-left: 35%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 23px;
-    margin-bottom: 50px;
-}  
-
-.carossel-Container{
-    position: relative;
-    display: flex;
-    width: 1200px;
-    height: 400px;
-    overflow: hidden;
-    justify-content: center;
-    background: none;
-  }
-  
-  .carossel-Slide{
-    position: relative;
-    display: flex;
-    height: auto;
-    width: 90%;
-    overflow: visible;
-    margin: 0 auto;
-    background: none;
-  }
-  
-  .item{
-    position: relative;
-    right: 0;
-    flex: none;
-    height: 310px;
-    width: 450px;  
-
-    transition: right 5s ease-out;
-    box-sizing: content-box;
-    background: none;
-  }
-
-  .item img {
-    border-radius: 48px;
-    margin-left: -300px;
-    height: 250px;
-    width: 250px; 
-  }
-  
-  .btnCarossel{
-    background: rgba(20, 20, 20, 0);
-    width: 5%;
-    height: 80%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
     display: flex;  
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btnCarossel:hover{
-    background: rgba(20,20,20,.65);
-}  
-    #seta{
-      box-shadow: 2px -2px 0 1px #fff inset;
-      transition: box-shadow 100ms;
-    }
-  
-  .BtnBack{
-    left: 0;
-}  
-    #seta{
-      position: absolute;
-    padding: 17%;
-    box-shadow: 2px -2px 0 -1px #fff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: box-shadow 100ms;
-    transform: rotate(45deg);
-    }
-  
-  .BtnNext{
-    right: 0;
-}  
-    #seta{
-      position: absolute;
-      padding: 17%;
-      box-shadow: 2px -2px 0 -1px #fff inset;
-      border: solid transparent;
-      border-width: 0 0 2px 2px;
-      margin: 0 auto;
-      opacity: 0;
-      transition: box-shadow 100ms;
-    transform: rotate(225deg); 
-    }
-
-#funcionamento {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 1000px;
-}
-
-#funcionamento h2{
-    margin-top: 200px;
-    margin-bottom: 45px;
-    margin-left: 45%;
-}    
-
-#funcionamento div{
-    display: flex;
-    margin-left: 35%;
-    width: 1000px;
-}
-
-#funcionamento .first h3 {
-    margin-left: 61px;
-    font-weight: bold;
-
-}
-
-#funcionamento .third h3 {
-    margin-left: 61px;
-    font-weight: bold;
-}
-
-#funcionamento .second h3{
-    margin-right: 61px;
-    font-weight: bold;
-}
-
-#funcionamento img {
-    border-radius: 48px;
-    width: 250px;
-    margin-left: 5px;
-    margin-bottom: 80px;
-}
-
-#funcionamento .second {
-    flex-direction: row-reverse;
-    justify-content: right;
-}
-
-#links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 1000px;
-    margin-left: 45%;
-}
-
-#integrantes {
-    width: 1000px;
-    margin-left: 30%;
-}
-
-#integrantes picture{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#integrantes img{    
-    margin-top: 150px;
-    border-radius: 50%;
-    margin-right: 50px;
-    width: 350px;
+    text-transform: uppercase;
 }
 .navbar a:hover {
     color: #FFE045;
     transition: 1000ms;
 }
+.navlink {
+    display: flex;
+    flex-direction: row;
+}
+.navbar a {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    margin-top: 147px;
+    color: #3DD8FC; 
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#home {
+    background: url(../img/Rectangle\ 1.png)no-repeat;
+    width: 850px;
+    margin-left: 35%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    border-radius: 23px;
+     
+}
+#home h2 {
+    text-align: justify;
+    margin-left: 140px;
+    margin-bottom: 60px;
+    margin-top: 45px;
+    color: #FFE045;
+    font-weight: bold;
+}
+#home p {
+    margin-left: 400px;
+    margin-right: 20px;
+    margin-top: -200px;
+    justify-content: right;
+    text-align: left;
+}
+#publico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-left: -75px; 
 
+} 
+#publico img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    float: left;
+    
+}
+.texto h2 {
+    color: #FFE045;
+    margin-top: 150px; 
+    margin-bottom: 80px;
+    margin-left: 80px ;
+    
+}
+.texto p {
+    text-align: justify;
+    margin-left: 70px;
+    margin-bottom: 127px;
+}
+.texto1 {
+    background: none;
+    margin-bottom: 70px;
+    align-items: center;
+}
+.texto1 h2{
+    color: #FFE045;
+}
+#equipamentos{
+    width: 850px;
+    height: 100vh;
+    background: url(../img/Rectangle\ 2.png) no-repeat;
+    display: flex;
+    margin-left: 35%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: -10rem;
+    
+}  
+#slider {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+}
+#slider img{
+    opacity: 0;
+    margin-right: 10px;
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+#slider img.selected { 
+    opacity: 1;
+}
+#funcionamento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+}
+#funcionamento h2{
+    margin-top: 120px;
+    margin-bottom: 70px;
+    margin-left: 400px;
+    color: #FFE045;
+}    
+#funcionamento p{
+    text-align: justify;
+    padding-bottom: 30px;
+    width: 20rem;
+    
+}
+#funcionamento div{
+    display: flex;
+    margin-left: 220px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20rem;
+
+}
+#funcionamento .first h3 {
+    margin-right: 30px;
+    font-weight: bold;
+
+}
+#funcionamento .second h3{
+    margin-left: 30px;
+    font-weight: bold;
+}
+#funcionamento .third h3 {
+    margin-right: 30px;
+    font-weight: bold;
+}
+#funcionamento .first img {
+    border-radius: 30px;
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+#funcionamento .second img {
+    border-radius: 30px;
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+#funcionamento .third img {
+    border-radius: 30px;
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 20px;
+    opacity: 90%;
+}
+#funcionamento .second {
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+#integrantes {
+    width: 1000px;
+    margin-left: 30%;
+}
+#integrantes picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 260px;
+}
+#integrantes img{    
+    margin-top: 150px;
+    border-radius: 50%;
+    margin-right: 50px;
+    width: 300px;
+}
 .foto-fernando {
     margin-left: 160px;
 }
-
+.ft-borges{
+    margin-top: 12px;
+}
 #links a {
     font-size: 20px;
     border: none;
-}
+    background: url(../img/Rectangle\ 1.png)no-repeat;
+    width: 1128px;
+    border-radius: 5px;
+    opacity: 90%;
+    margin-right: 25%;
 
-#links a:hover {
+}
+#links h2{
     color: #FFE045;
-    transition: 1500ms;
-    font-size: 35px;
-    text-decoration:underline;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    margin-right: 20%;
 }
+#links a:hover {
+    color: #3DD8FC;
+    transition: 1500ms;
+    font-size: 24px;
+}
+#links {
 
+    width: 1000px;
+    margin-left: 45%;
+    background: none;
+}
+.links a{
+    border: none;
+    
+}   
 #comentario {
     position:relative; top:-80px;
     left:170px;
@@ -370,92 +317,338 @@ main {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
    }
-   
    #foto:hover  #comentario{
          opacity: 1;
    }
+.kk3hrdamanha li{
+    display: flex;
+    padding: 5px;
+    justify-content: left;
+}
+.kk3hrdamanha ul{
+    display: flex;
+    padding: 5px;
+    justify-content: right;
+}
 
 
-.links a{
-    border: none;
-}   
+@media (min-width: 1000px){
 
-@media (max-width: 768px){
+    main{
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    input {
+        width: 0;
+        height: 0;
+    }
+    html {
+        scroll-behavior: smooth;
+        
+    }
     body {
         min-height: 100vh;
-    }
-    p {
-        font-size: 14px;
+        max-width: 350px;
+       
+    
     }
     h2 {
+        font-size: 45px;
+        font-weight: 700;
+        background: none;
+         
+    }
+    a {
+        text-decoration: none;
+        border-right: 2px solid #FA43DE;
+        margin-right: 2px;
+        text-align: center;
+        padding: 5px;
+        background: none;
+    }
+    p {
         font-size: 24px;
+        font-weight: 500;
+        background: none;
+    
+       
     }
-    h3{
-        font-size: 20px;
-    }
-    .navbar a {
-        font-size: 2px;
-        margin-right: 10px;
-        padding-right: 10px;
+    h3 {
+        color: #FFE045;
+        font-size: 45px;
+        background: none;
     }
     .navbar img {
-        width: 250px;
+        width: 300px;
     }
-    #home, #equipamentos{
-        width: 650px;
-        height: 300px;
-        margin-left: 25%;
+    .navbar{
+        display: flex;  
+        text-transform: uppercase;
     }
-    #home p{
-        margin-left: 250px; 
-        margin-top: -95px;   
+    .navbar a:hover {
+        color: #FFE045;
+        transition: 1000ms;
+    }
+    .navlink {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar a {
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        margin-top: 147px;
+        color: #3DD8FC; 
+        padding-right: 33px;
+        padding-left: 33px;
+    }
+    #home {
+        background: url(../img/Rectangle\ 1.png)no-repeat;
+        width: 1128px;
+        margin-left: 35%;
+        height: 551px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        border-radius: 23px;
+         
     }
     #home h2 {
-        margin-top: 60px;
+        text-align: justify;
+        margin-left: 140px;
+        margin-bottom: 45px;
+        margin-top: 45px;
+        color: #FFE045;
+        font-weight: bold;
+    }
+    #home p {
+        margin-left: 500px;
+        margin-right: 20px;
+        margin-top: -190px;
+        justify-content: right;
+        text-align: left;
     }
     #publico{
-        width: 700px;
-        margin-left: 5%;
-    }
-    #publico img {
-        width: 180px;
-        height: 180px;
-    }
-    .item{
-        width: 180px;
-        height: 180px;
-        margin-right: 50px;
-    }
-
-    .item img {
-        width: 180px;
-        height: 180px;
-        margin-right: 10px;
-    }
-    .carossel-Container{
-        width: 650px;
-        height: 300px;
-    } 
-    #funcionamento, #funcionamento div {
-        width: 650px;
+        display: flex;
         justify-content: center;
-        margin-left: 15%;
+        align-items: center;
+        width: 1000px;
+        margin-left: 50px; 
+    
+    } 
+    #publico img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        margin-top: 120px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: 200px;
+        float: left;
+        
     }
-    #links {
-        width: 650px;
-        border: none;
+    .texto h2 {
+        color: #FFE045;
+        margin-top: 150px; 
+        margin-bottom: 80px;
+        margin-left: 80px ;
+        
     }
-    #links a {
-        border: none;
-        font-size: 24px;
+    .texto p {
+        text-align: justify;
+        margin-left: 70px;
+        margin-bottom: 127px;
+    }
+    .texto1 {
+        background: none;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .texto1 h2{
+        color: #FFE045;
+    }
+    #equipamentos{
+        width: 1128px;
+        height: 100vh;
+        background: url(../img/Rectangle\ 2.png)no-repeat;
+        display: flex;
+        margin-left: 35%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-top: 80px;
+
+    }  
+    #slider {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 700px;
+        height: 2000px;
+        position: relative;
+        margin-bottom: 10rem;
+        margin-top: 2rem;
+        background: none;
+
+    }
+    #slider img{
+        opacity: 0;
+        border-radius: 10px;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 800ms;
+        
+    }
+    #slider img.selected { 
+        opacity: 1;
+    }
+    #funcionamento {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 1000px;
+    }
+    #funcionamento h2{
+        margin-top: 120px;
+        margin-bottom: 70px;
+        margin-left: 400px;
+        color: #FFE045;
+    }    
+    #funcionamento p{
+        text-align: justify;
+        padding-top: 30px;
+    }
+    #funcionamento div{
+        display: flex;
+        margin-left: 330px;
+    
+    }
+    #funcionamento .first h3 {
+        margin-right: 30px;
+        font-weight: bold;
+    
+    }
+    #funcionamento .second h3{
+        margin-left: 30px;
+        font-weight: bold;
+    }
+    #funcionamento .third h3 {
+        margin-right: 30px;
+        font-weight: bold;
+    }
+    #funcionamento .first img {
+        border-radius: 30px;
+        width: 220px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 80px;
+    }
+    #funcionamento .second img {
+        border-radius: 30px;
+        width: 220px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 80px;
+    }
+    #funcionamento .third img {
+        border-radius: 30px;
+        width: 220px;
+        margin-right: 20px;
+        margin-left: 20px;
+        opacity: 90%;
+    }
+    #funcionamento .second {
+        flex-direction: row-reverse;
+        justify-content: right;
     }
     #integrantes {
-        width: 650px;
-        margin-left: 15%;
+        width: 1000px;
+        margin-left: 30%;
     }
-    #integrantes img {
-        width: 250px;
-        height: 250px;
-        margin-right: 25px;
+    #integrantes picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    #integrantes img{    
+        margin-top: 150px;
+        border-radius: 50%;
+        margin-right: 50px;
+        width: 350px;
+    }
+    .foto-fernando {
+        margin-left: 160px;
+    }
+    .ft-borges{
+        margin-top: 12px;
+    }
+    #links a {
+        font-size: 20px;
+        border: none;
+        background: url(../img/Rectangle\ 1.png)no-repeat;
+        width: 1128px;
+        border-radius: 5px;
+        opacity: 90%;
+    
+    }
+    #links h2{
+        color: #FFE045;
+        margin-bottom: 50px;
+        margin-left: 60px;
+    }
+    #links a:hover {
+        color: #3DD8FC;
+        transition: 1500ms;
+        font-size: 24px;
+    }
+    #links {
+    
+        width: 1000px;
+        margin-left: 45%;
+    }
+    .links a{
+        border: none;
+        
+    }   
+    #comentario {
+        position:relative; top:-80px;
+        left:170px;
+        padding:4px;
+        line-height:20px;
+        background:#333;
+        color:#fff;
+        display: block;
+        width:135px;
+        opacity: 0;
+       
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+       }
+       #foto:hover  #comentario{
+             opacity: 1;
+       }
+    .kk3hrdamanha li{
+        display: flex;
+        padding: 5px;
+        justify-content: left;
+    }
+    .kk3hrdamanha ul{
+        display: flex;
+        padding: 5px;
+        justify-content: right;
+    }
+    
 }

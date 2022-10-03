@@ -1,32 +1,28 @@
-let carosseis = document.getElementsByClassName('carossel-Container')
+let time = 5000,
+    currentImageIndex = 0,
+    images = document
+                .querySelectorAll("#slider img")
+    max = images.length;
 
-for(let i = 0; i < carosseis.length; i++){
-  let carossel = carosseis[i]
-  let btnBack = carossel.getElementsByClassName('BtnBack')[0]
-  let btnNext = carossel.getElementsByClassName('BtnNext')[0]
+function nextImage() {
 
-  let itens = carossel.getElementsByClassName('item')
-  let posicaoAnterior = 0
-  let mover = posicaoAnterior + 100
+    images[currentImageIndex]
+        .classList.remove("selected")
 
-  btnNext.addEventListener('click', ()=>{
-    mover = posicaoAnterior + 100
+    currentImageIndex++
 
-    for(let c = 0; c < itens.length; c++ ){
+    if(currentImageIndex >= max)
+        currentImageIndex = 0
 
-    itens[c].style.right=  mover + '%'
-
-    posicaoAnterior = mover}
-  })
-
-  btnBack.addEventListener('click', ()=>{
-    mover = posicaoAnterior - 100
-
-    for(let c = 0; c < itens.length; c++ ){
-
-    itens[c].style.right=  mover + '%'
-
-    posicaoAnterior = mover}
-
-  })
+    images[currentImageIndex]
+        .classList.add("selected")
 }
+
+function start() {
+    setInterval(() => {
+        // troca de image
+        nextImage()
+    }, time)
+}
+
+window.addEventListener("load", start)
