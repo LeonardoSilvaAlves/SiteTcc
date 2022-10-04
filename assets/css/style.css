@@ -339,6 +339,7 @@ h3 {
 
     main{
         max-width: 1024px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -354,8 +355,13 @@ h3 {
     }
     body {
         min-height: 100vh;
-        max-width: 350px;
-       
+        max-width: 1440px;
+        width: 1024px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     
     }
     h2 {
@@ -386,6 +392,7 @@ h3 {
     }
     .navbar img {
         width: 300px;
+        margin-left: 540px;
     }
     .navbar{
         display: flex;  
@@ -440,7 +447,7 @@ h3 {
         justify-content: center;
         align-items: center;
         width: 1000px;
-        margin-left: 50px; 
+        margin-left: 200px; 
     
     } 
     #publico img {
@@ -499,7 +506,7 @@ h3 {
         width: 300px;
         height: 250px;
         position: relative;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
         margin-top: -18rem;
         background: none;
 
@@ -521,13 +528,16 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        text-align: center;
         justify-content: center;
         width: 1000px;
+        margin-left: 350px;
     }
     #funcionamento h2{
         margin-top: 120px;
         margin-bottom: 70px;
-        margin-left: 400px;
+        margin-right: 250px;
+        text-align: center;
         color: #FFE045;
     }    
     #funcionamento p{
@@ -579,7 +589,7 @@ h3 {
     }
     #integrantes {
         width: 1000px;
-        margin-left: 30%;
+        margin-left: 45%;
     }
     #integrantes picture{
         display: flex;
@@ -618,9 +628,9 @@ h3 {
         font-size: 24px;
     }
     #links {
-    
         width: 1000px;
-        margin-left: 45%;
+        margin-left: 50%;
+        margin-top: -500px;
     }
     .links a{
         border: none;
